@@ -29,8 +29,8 @@ void prims(int g[5][5], int v)
 		mstSet[u] = 1;
 		for(int i = 0; i < v; ++i)
 		{
-			if(g[i][u] && mstSet[i] != 1 && key[i] > g[i][u]) // for dijkstea
-			{													// key[i] > g[i][u] + key[u]
+			if(g[i][u] && mstSet[i] != 1 && key[i] > g[i][u]) 
+			{													
 				key[i] = g[i][u];
 				parent[i] = u;
 			}
